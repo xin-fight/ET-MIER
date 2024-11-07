@@ -45,7 +45,7 @@ ET-MIER
 **ET-MIER-ReDocRED**
 
 ```
-ET-MIER
+ET-MIER-ReDocRED
  |-- dataset
  |    |-- redocred
  |    |    |-- train_revised.json
