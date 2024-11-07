@@ -1,11 +1,5 @@
 # ET-MIER
 
-**ET-MIER: Entity Type-guided Key Mention Identification and Evidence Retrieval for Document-level Relation Extraction**
-
-# Architecture
-
-<img src=".\ET-MIER.png" alt="ET-MIER" style="zoom:33%;" />
-
 # Requirements
 
 Packages listed below are required.
