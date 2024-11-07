@@ -1,0 +1,67 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="54">
+            <item index="0" class="java.lang.String" itemvalue="python-docx" />
+            <item index="1" class="java.lang.String" itemvalue="gradio" />
+            <item index="2" class="java.lang.String" itemvalue="mdtex2html" />
+            <item index="3" class="java.lang.String" itemvalue="arxiv" />
+            <item index="4" class="java.lang.String" itemvalue="python-markdown-math" />
+            <item index="5" class="java.lang.String" itemvalue="tensorflow" />
+            <item index="6" class="java.lang.String" itemvalue="scikit-image" />
+            <item index="7" class="java.lang.String" itemvalue="Shapely" />
+            <item index="8" class="java.lang.String" itemvalue="numpy" />
+            <item index="9" class="java.lang.String" itemvalue="Pillow" />
+            <item index="10" class="java.lang.String" itemvalue="deepspeed" />
+            <item index="11" class="java.lang.String" itemvalue="partial" />
+            <item index="12" class="java.lang.String" itemvalue="bitsandbytes" />
+            <item index="13" class="java.lang.String" itemvalue="keras" />
+            <item index="14" class="java.lang.String" itemvalue="prettytable" />
+            <item index="15" class="java.lang.String" itemvalue="tensorboard" />
+            <item index="16" class="java.lang.String" itemvalue="timm" />
+            <item index="17" class="java.lang.String" itemvalue="munkres" />
+            <item index="18" class="java.lang.String" itemvalue="opencv-python" />
+            <item index="19" class="java.lang.String" itemvalue="tqdm" />
+            <item index="20" class="java.lang.String" itemvalue="matplotlib" />
+            <item index="21" class="java.lang.String" itemvalue="torch" />
+            <item index="22" class="java.lang.String" itemvalue="torchvision" />
+            <item index="23" class="java.lang.String" itemvalue="pandas" />
+            <item index="24" class="java.lang.String" itemvalue="PySimpleGUI" />
+            <item index="25" class="java.lang.String" itemvalue="protobuf" />
+            <item index="26" class="java.lang.String" itemvalue="decorator" />
+            <item index="27" class="java.lang.String" itemvalue="networkx" />
+            <item index="28" class="java.lang.String" itemvalue="python-Levenshtein-wheels" />
+            <item index="29" class="java.lang.String" itemvalue="gast" />
+            <item index="30" class="java.lang.String" itemvalue="pyclipper" />
+            <item index="31" class="java.lang.String" itemvalue="requests" />
+            <item index="32" class="java.lang.String" itemvalue="imgaug" />
+            <item index="33" class="java.lang.String" itemvalue="lmdb" />
+            <item index="34" class="java.lang.String" itemvalue="paddlepaddle" />
+            <item index="35" class="java.lang.String" itemvalue="wordsegment" />
+            <item index="36" class="java.lang.String" itemvalue="PyWavelets" />
+            <item index="37" class="java.lang.String" itemvalue="certifi" />
+            <item index="38" class="java.lang.String" itemvalue="multiprocess" />
+            <item index="39" class="java.lang.String" itemvalue="urllib3" />
+            <item index="40" class="java.lang.String" itemvalue="pyparsing" />
+            <item index="41" class="java.lang.String" itemvalue="scipy" />
+            <item index="42" class="java.lang.String" itemvalue="six" />
+            <item index="43" class="java.lang.String" itemvalue="tifffile" />
+            <item index="44" class="java.lang.String" itemvalue="astor" />
+            <item index="45" class="java.lang.String" itemvalue="kiwisolver" />
+            <item index="46" class="java.lang.String" itemvalue="pysrt" />
+            <item index="47" class="java.lang.String" itemvalue="imageio" />
+            <item index="48" class="java.lang.String" itemvalue="filesplit" />
+            <item index="49" class="java.lang.String" itemvalue="idna" />
+            <item index="50" class="java.lang.String" itemvalue="transformers" />
+            <item index="51" class="java.lang.String" itemvalue="ipdb" />
+            <item index="52" class="java.lang.String" itemvalue="ujson" />
+            <item index="53" class="java.lang.String" itemvalue="opt_einsum" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

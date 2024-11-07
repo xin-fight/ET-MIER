@@ -1,0 +1,36 @@
+1. Model without evidence supervision
+python run_iscf_SAIS_Evidence.py --do_train --data_dir dataset/docred --transformer_type bert --model_name_or_path bert-base-cased --display_name bert_lambda0_seed66 --save_path bert_lambda0_seed66 --train_file train_annotated.json --dev_file dev.json --train_batch_size 4 --test_batch_size 8 --gradient_accumulation_steps 1 --num_labels 4 --lr_transformer 5e-5 --max_grad_norm 1.0 --evi_thresh 0.2 --evi_lambda 0 --warmup_ratio 0.06 --num_train_epochs 30.0 --num_class 97
+
+2. Model with evidence supervision
+python run_iscf_SAIS_Evidence.py --do_train --data_dir dataset/docred --transformer_type bert --model_name_or_path bert-base-cased --display_name bert_lambda0.1_seed66 --save_path bert_lambda0.1_seed66 --train_file train_annotated.json --dev_file dev.json --train_batch_size 4 --test_batch_size 8 --gradient_accumulation_steps 1 --num_labels 4 --lr_transformer 5e-5 --max_grad_norm 1.0 --evi_thresh 0.2 --evi_lambda 0.1 --warmup_ratio 0.06 --num_train_epochs 30.0 --num_class 97
+
+3. The inference stage cross fusion strategy is applied
+python run_iscf_SAIS_Evidence.py --data_dir dataset/docred --transformer_type bert --model_name_or_path bert-base-cased --load_path /root/autodl-tmp/Code/ATLOP-DREEAM-Chtr/bert_lambda0.1_seed66/ --eval_mode single --test_file dev.json --test_batch_size 8 --num_labels 4 --evi_thresh 0.2 --num_class 97
+python run_iscf_SAIS_Evidence.py --data_dir dataset/docred --transformer_type bert --model_name_or_path bert-base-cased --load_path / --eval_mode single --test_file dev.json --test_batch_size 8 --num_labels 4 --evi_thresh 0.2 --num_class 97
+
+python run_iscf_SAIS_Evidence.py --data_dir dataset/docred --transformer_type bert --model_name_or_path bert-base-cased --load_path /root/autodl-tmp/Code/ATLOP-DREEAM-Chtr/bert_lambda0_seed66/ --results_path /root/autodl-tmp/Code/ATLOP-DREEAM-Chtr/bert_lambda0.1_seed66/ --eval_mode fushion --test_file dev.json --test_batch_size 32 --num_labels 4 --evi_thresh 0.2 --num_class 97
+python run_iscf_SAIS_Evidence.py --data_dir dataset/docred --transformer_type bert --model_name_or_path bert-base-cased --load_path /root/autodl-tmp/Code/ATLOP-DREEAM-Chtr/bert_lambda0_seed66/ET_0.25_three_atten_traindevtest_evilambda0_s_attn_lambda0.9_enhance_evi_61.729889 --results_path / --eval_mode fushion --test_file dev.json --test_batch_size 32 --num_labels 4 --evi_thresh 0.2 --num_class 97
+
+4. With ${model_evi_dir}/thresh available, you can obtain the final predictions on the test set
+python run_iscf_SAIS_Evidence.py --data_dir dataset/docred --transformer_type bert --model_name_or_path bert-base-cased --load_path /root/autodl-tmp/Code/ATLOP-DREEAM-Chtr/bert_lambda0.1_seed66/ --eval_mode single --test_file test.json --test_batch_size 8 --num_labels 4 --evi_thresh 0.2 --num_class 97
+python run_iscf_SAIS_Evidence.py --data_dir dataset/docred --transformer_type bert --model_name_or_path bert-base-cased --load_path /root/autodl-tmp/Code/ATLOP-DREEAM-Chtr/bert_lambda0_seed66/ --results_path /root/autodl-tmp/Code/ATLOP-DREEAM-Chtr/bert_lambda0.1_seed66/ --eval_mode fushion --test_file test.json --test_batch_size 32 --num_labels 4 --evi_thresh 0.2 --num_class 97
+
+
+
+1. Model without evidence supervision
+python run_iscf_SAIS_Evidence.py --do_train --data_dir dataset/docred --transformer_type bert --model_name_or_path bert-base-cased --display_name bert_lambda0_seed --save_path bert_lambda0_seed --train_file train_annotated.json --dev_file dev.json --train_batch_size 4 --test_batch_size 8 --gradient_accumulation_steps 1 --num_labels 4 --lr_transformer 5e-5 --max_grad_norm 1.0 --evi_thresh 0.2 --evi_lambda 0 --warmup_ratio 0.06 --num_train_epochs 30.0 --num_class 97
+
+2. Model with evidence supervision
+python run_iscf_SAIS_Evidence.py --do_train --data_dir dataset/docred --transformer_type bert --model_name_or_path bert-base-cased --display_name bert_lambda0.1_seed --save_path bert_lambda0.1_seed --train_file train_annotated.json --dev_file dev.json --train_batch_size 4 --test_batch_size 8 --gradient_accumulation_steps 1 --num_labels 4 --lr_transformer 5e-5 --max_grad_norm 1.0 --evi_thresh 0.2 --evi_lambda 0.1 --warmup_ratio 0.06 --num_train_epochs 30.0 --num_class 97
+
+3. The inference stage cross fusion strategy is applied
+python run_iscf_SAIS_Evidence.py --data_dir dataset/docred --transformer_type bert --model_name_or_path bert-base-cased --load_path /root/autodl-tmp/Code/ATLOP-DREEAM-Chtr/bert_lambda0.1_seed/ --eval_mode single --test_file dev.json --test_batch_size 8 --num_labels 4 --evi_thresh 0.2 --num_class 97
+python run_iscf_SAIS_Evidence.py --data_dir dataset/docred --transformer_type bert --model_name_or_path bert-base-cased --load_path / --eval_mode single --test_file dev.json --test_batch_size 8 --num_labels 4 --evi_thresh 0.2 --num_class 97
+
+python run_iscf_SAIS_Evidence.py --data_dir dataset/docred --transformer_type bert --model_name_or_path bert-base-cased --load_path /root/autodl-tmp/Code/ATLOP-DREEAM-Chtr/bert_lambda0_seed/ --results_path /root/autodl-tmp/Code/ATLOP-DREEAM-Chtr/bert_lambda0.1_seed/ --eval_mode fushion --test_file dev.json --test_batch_size 32 --num_labels 4 --evi_thresh 0.2 --num_class 97
+python run_iscf_SAIS_Evidence.py --data_dir dataset/docred --transformer_type bert --model_name_or_path bert-base-cased --load_path /root/autodl-tmp/Code/ATLOP-DREEAM-Chtr/bert_lambda0_seed/ET_0.25_three_atten_traindevtest_evilambda0_s_attn_lambda0.9_enhance_evi_61.729889 --results_path / --eval_mode fushion --test_file dev.json --test_batch_size 32 --num_labels 4 --evi_thresh 0.2 --num_class 97
+python run_iscf_SAIS_Evidence.py --data_dir dataset/docred --transformer_type bert --model_name_or_path bert-base-cased --load_path /root/autodl-tmp/Code/ATLOP-DREEAM-Chtr/bert_lambda0_seed66/SAIS_0.25_threeattn_lambda0_61.729889 --results_path / --eval_mode fushion --test_file dev.json --test_batch_size 32 --num_labels 4 --evi_thresh 0.2 --num_class 97
+
+4. With ${model_evi_dir}/thresh available, you can obtain the final predictions on the test set
+python run_iscf_SAIS_Evidence.py --data_dir dataset/docred --transformer_type bert --model_name_or_path bert-base-cased --load_path /root/autodl-tmp/Code/ATLOP-DREEAM-Chtr/bert_lambda0.1_seed/ --eval_mode single --test_file test.json --test_batch_size 8 --num_labels 4 --evi_thresh 0.2 --num_class 97
+python run_iscf_SAIS_Evidence.py --data_dir dataset/docred --transformer_type bert --model_name_or_path bert-base-cased --load_path /root/autodl-tmp/Code/ATLOP-DREEAM-Chtr/bert_lambda0_seed/ --results_path /root/autodl-tmp/Code/ATLOP-DREEAM-Chtr/bert_lambda0.1_seed/ --eval_mode fushion --test_file test.json --test_batch_size 32 --num_labels 4 --evi_thresh 0.2 --num_class 97
