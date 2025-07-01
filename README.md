@@ -132,5 +132,4 @@ python run_iscf_SAIS_Evidence.py --data_dir dataset/redocred --transformer_type 
 
 # Additional Notes
 
-The current structure of the code repository appears somewhat disorganized. We recommend further organizing it (e.g., clearer folder hierarchy, modular scripts) to make it easier for others to reproduce results and maintain the code.
-
+The current structure of the code repository is relatively disorganized, and we plan to further reorganize it in the future (e.g., improving folder hierarchy and modularizing scripts) to make it easier for others to reproduce the results and maintain the code.
