@@ -128,3 +128,9 @@ python run_iscf_SAIS_Evidence.py --data_dir dataset/redocred --transformer_type 
 python run_iscf_SAIS_Evidence.py --data_dir dataset/redocred --transformer_type roberta --model_name_or_path roberta-large --load_path {model_dir} --results_path {model_evi_dir} --eval_mode fushion --test_file dev_revised.json --test_batch_size 32 --num_labels 4 --evi_thresh 0.2 --num_class 97 --three_atten --Relation_loss_lambda 0.1 --loss_weight_ET 0.325 --Relation_loss_lambda 2 --s_attn_lambda 0.01
 ```
 
+
+
+# Additional Notes
+
+The current structure of the code repository appears somewhat disorganized. We recommend further organizing it (e.g., clearer folder hierarchy, modular scripts) to make it easier for others to reproduce results and maintain the code.
+
